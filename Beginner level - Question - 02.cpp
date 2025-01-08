@@ -60,4 +60,44 @@ char result=grade(score);
 cout<<"grade: "<<result;
 }
 
-//question 3 -->
+//question 3 -->corresponding month of the year using a switch case
+
+#include <iostream>
+using namespace std;
+string months(int number){
+switch (number) {
+        case 1:
+            return "January";
+        case 2:
+            return "February";
+        case 3:
+            return "March";
+        case 4:
+            return "April";
+        case 5:
+            return "May";
+        case 6:
+            return "June";
+        case 7:
+            return "July";
+        case 8:
+            return "August";
+        case 9:
+            return "september";
+        case 10:
+            return "October";
+        case 11:
+            return "November";
+        case 12:
+            return "December";
+        default:
+            return "Invalid";
+        }
+}
+int main(){
+int number;
+cout<<"Enter a number";
+cin>>number;
+string result=months(number);
+cout<<"The month is: "<<result;
+}
