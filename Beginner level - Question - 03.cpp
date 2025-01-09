@@ -39,4 +39,17 @@ cout<<"The factorial of "<<number<<" is: "<<result;
 
 //Question 3 -->Prints the multiplication table of N up to 10 using a loop
 
-
+#include <iostream>
+using namespace std;
+int table(int number,int i ){
+return number*i;
+}
+int main(){
+int number;
+cout<<"Enter a number: ";
+cin>>number;
+for(int i=1;i<11;i++){
+int result=table(number,i);
+cout<<number<<" x "<<i<<" = "<<result<<endl;
+}
+}
